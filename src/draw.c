@@ -129,7 +129,7 @@ void draw(numberstack* numbers, operation* current_op) {
         }
 
         if(!operation_enabled) prio += 2;
-        else mvwprintw_colors(displaywin, 2, 2, COLOR_PAIR_OPERATION, "Operation: %c\n", current_op ? current_op->character : ' ');
+        else mvwprintw_colors(displaywin, 2, 2, COLOR_PAIR_OPERATION, "Hello, World!\nOperation: %c\n", current_op ? current_op->character : ' ');
 
         if(!decimal_enabled) prio += 2;
         else mvwprintw_colors(displaywin, 4-prio, 2, COLOR_PAIR_DECIMAL, "Decimal:   %lld", n);
